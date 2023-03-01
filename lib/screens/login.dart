@@ -1,6 +1,7 @@
 
 import 'package:diba/screens/tailor_info.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../constant.dart';
 import 'widget/back.dart';
 
@@ -49,6 +50,7 @@ class _LoginState extends State<Login> {
                               fontWeight: FontWeight.bold, fontSize: 30),
                         ),
                         Container(
+                          height: 630,
                           padding: EdgeInsets.all(20),
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -74,9 +76,9 @@ class _LoginState extends State<Login> {
                                       borderSide: BorderSide(
                                           color: Colors.grey.shade300),
                                     ),
-                                    suffixIcon: Icon(
-                                        Icons.supervised_user_circle_rounded),
-                                    hintTextDirection: TextDirection.ltr),
+                                  suffixIcon: Icon(FontAwesomeIcons.user,color: IconColor,),
+                                  hintText: ' نام کاربری خود را وارد کنید',
+                                  hintTextDirection: TextDirection.rtl,),
                               ),
                               SizedBox(
                                 height: 50,
@@ -96,10 +98,10 @@ class _LoginState extends State<Login> {
                                       ),
                                       borderSide: BorderSide(
                                           color: Colors.grey.shade300)),
-                                  suffixIcon: Icon(
-                                    Icons.lock,
-                                  ),
-                                  hintTextDirection: TextDirection.ltr,
+                                  suffixIcon: Icon(FontAwesomeIcons.lock,color: IconColor,),
+                                  hintText: ' رمز کاربری خود را وارد کنید',
+                                  hintTextDirection: TextDirection.rtl,
+
                                 ),
                               ),
                               SizedBox(height: 30),

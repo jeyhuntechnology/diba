@@ -1,6 +1,7 @@
 import 'package:diba/screens/regiter_ordering.dart';
 import 'package:diba/screens/users_list.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../constant.dart';
 
@@ -11,6 +12,15 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(backgroundColor: Colors.brown[100], actions: [
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.menu,
+                color: IconColor,
+                size: 30,
+              ))
+        ]),
         backgroundColor: Colors.white,
         body: SafeArea(
           child: Column(
@@ -24,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                       backgroundImage: AssetImage('images/3.jpg'),
                     ),
                     SizedBox(
-                      width: 280,
+                      width: 20,
                     ),
                     Text('sakina')
                   ],
@@ -38,26 +48,25 @@ class HomeScreen extends StatelessWidget {
                 width: 370,
                 padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('images/5.jpg'), fit: BoxFit.cover),
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
-                child: Image(
-                  image: AssetImage('images/1.jpg'),
-                ),
               ),
               SizedBox(
-                height: 5,
+                height: 10,
               ),
               Padding(
-                padding: EdgeInsets.all(20),
+                padding: EdgeInsets.all(5),
                 child: Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                            height: 130,
-                            width: 130,
+                            height: 170,
+                            width: 170,
                             decoration: BoxDecoration(
                               color: Colors.brown[100],
                               borderRadius:
@@ -71,10 +80,9 @@ class HomeScreen extends StatelessWidget {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) =>UsersList()
-                                                ));
+                                            builder: (context) => UsersList()));
                                   },
-                                  icon: Icon(Icons.supervised_user_circle_sharp),
+                                  icon: Icon(FontAwesomeIcons.users),
                                   color: IconColor,
                                   iconSize: 40,
                                 ),
@@ -85,8 +93,8 @@ class HomeScreen extends StatelessWidget {
                           width: 20,
                         ),
                         Container(
-                          height: 130,
-                          width: 130,
+                          height: 170,
+                          width: 170,
                           decoration: BoxDecoration(
                             color: Colors.brown[100],
                             borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -102,7 +110,7 @@ class HomeScreen extends StatelessWidget {
                                           builder: (context) =>
                                               RegisterOrder()));
                                 },
-                                icon: Icon(Icons.add),
+                                icon: Icon(FontAwesomeIcons.plus),
                                 color: IconColor,
                                 iconSize: 40,
                               ),
@@ -122,8 +130,8 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                            height: 130,
-                            width: 130,
+                            height: 170,
+                            width: 170,
                             decoration: BoxDecoration(
                               color: Colors.brown[100],
                               borderRadius:
@@ -133,7 +141,7 @@ class HomeScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(
-                                  Icons.money,
+                                  FontAwesomeIcons.moneyBill,
                                   size: 40,
                                   color: IconColor,
                                 ),
@@ -144,8 +152,8 @@ class HomeScreen extends StatelessWidget {
                           width: 20,
                         ),
                         Container(
-                            height: 130,
-                            width: 130,
+                            height: 170,
+                            width: 170,
                             decoration: BoxDecoration(
                               color: Colors.brown[100],
                               borderRadius:
@@ -155,7 +163,7 @@ class HomeScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(
-                                  Icons.monetization_on,
+                                  FontAwesomeIcons.moneyCheckDollar,
                                   size: 40,
                                   color: IconColor,
                                 ),
@@ -177,36 +185,36 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.supervised_user_circle_sharp),
+                      icon: Icon(FontAwesomeIcons.personDress),
                       color: IconColor,
                       iconSize: 25,
                     ),
                     SizedBox(
-                      width: 60,
+                      width: 55,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.comment_bank),
+                      icon: Icon(FontAwesomeIcons.users),
                       color: IconColor,
-                      iconSize: 25,
+                      iconSize: 20,
                     ),
                     SizedBox(
-                      width: 60,
+                      width: 55,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.home),
+                      icon: Icon(FontAwesomeIcons.scissors),
                       color: IconColor,
-                      iconSize: 25,
+                      iconSize: 20,
                     ),
                     SizedBox(
-                      width: 60,
+                      width: 55,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.new_releases_outlined),
+                      icon: Icon(FontAwesomeIcons.house),
                       color: IconColor,
-                      iconSize: 25,
+                      iconSize: 20,
                     )
                   ],
                 ),

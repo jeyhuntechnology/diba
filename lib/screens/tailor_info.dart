@@ -1,5 +1,6 @@
 import 'package:diba/screens/home-screen.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../constant.dart';
 
@@ -25,6 +26,7 @@ class TailorInfo extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                 ),
                 Container(
+                  height: 635,
                   padding: EdgeInsets.all(30),
                   margin: EdgeInsets.only(top: 20),
                   decoration: BoxDecoration(
@@ -36,14 +38,16 @@ class TailorInfo extends StatelessWidget {
                   ),
                   child: Column(
                     children: [
+
                       CircleAvatar(
                         backgroundColor: Color(0xFF9e777b),
                         radius: 50,
                         child: Icon(
-                          Icons.camera_alt_outlined,
+                         FontAwesomeIcons.camera,
                           size: 50,
                         ),
                       ),
+                      Text('آپلود عکس'),
                       SizedBox(
                         height: 30,
                       ),
@@ -62,7 +66,7 @@ class TailorInfo extends StatelessWidget {
                             ),
                             borderSide: BorderSide(color: Colors.grey.shade300),
                           ),
-                          suffixIcon: Icon(Icons.factory_outlined),
+                          suffixIcon: Icon(FontAwesomeIcons.user),
                           hintText: 'نام خیاطی',
                           hintTextDirection: TextDirection.rtl,
                         ),
@@ -87,7 +91,7 @@ class TailorInfo extends StatelessWidget {
                               borderSide:
                                   BorderSide(color: Colors.grey.shade300)),
                           suffixIcon: Icon(
-                            Icons.location_on_outlined,
+                          FontAwesomeIcons.locationDot,
                           ),
                           hintText: 'آدرس خیاطی',
                           hintTextDirection: TextDirection.rtl,
