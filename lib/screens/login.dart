@@ -49,6 +49,7 @@ class _LoginState extends State<Login> {
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 30),
                         ),
+                        SizedBox(height: 20,),
                         Container(
                           height: 630,
                           padding: EdgeInsets.all(20),
@@ -59,8 +60,10 @@ class _LoginState extends State<Login> {
                               topRight: Radius.circular(35),
                             ),
                           ),
+
                           child: Column(
                             children: [
+                              SizedBox(height: 20,),
                               TextField(
                                 obscureText: true,
                                 decoration: InputDecoration(
@@ -120,7 +123,7 @@ class _LoginState extends State<Login> {
                                     primary: kRegisterButtonColor,
                                     elevation: 3,
                                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                                    // minimumSize:Size (400,40),
+                                    minimumSize:Size (400,40),
                                     padding: EdgeInsets.all(15)),
                                 onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>TailorInfo(),),);},
                                 child: const Text('تایید',style: TextStyle(fontWeight: FontWeight.bold),),

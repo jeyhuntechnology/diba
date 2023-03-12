@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:diba/screens/regiter_ordering.dart';
 import 'package:diba/screens/users_list.dart';
 import 'package:flutter/material.dart';
@@ -178,47 +179,30 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 40,
               ),
-              Padding(
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(FontAwesomeIcons.personDress),
-                      color: IconColor,
-                      iconSize: 25,
+              CurvedNavigationBar(
+                  backgroundColor: Colors.white,
+                  onTap: (index) {},
+                  height: 70,
+                  color:Colors.brown.shade100,
+                  items: [
+                    const Icon(
+                      FontAwesomeIcons.personDress,
+                      color: Color(0xFF9e777b),size: 20,
                     ),
-                    SizedBox(
-                      width: 55,
+                    const Icon(
+                      FontAwesomeIcons.users,
+                      color: Color(0xFF9e777b),size: 20,
                     ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(FontAwesomeIcons.users),
-                      color: IconColor,
-                      iconSize: 20,
-                    ),
-                    SizedBox(
-                      width: 55,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(FontAwesomeIcons.scissors),
-                      color: IconColor,
-                      iconSize: 20,
-                    ),
-                    SizedBox(
-                      width: 55,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(FontAwesomeIcons.house),
-                      color: IconColor,
-                      iconSize: 20,
+                    const Icon(
+                      FontAwesomeIcons.scissors,
+                      color: Color(0xFF9e777b),size: 20,
                     )
-                  ],
-                ),
-              )
+                    ,
+                    const Icon(
+                      FontAwesomeIcons.house,
+                      color: Color(0xFF9e777b),size: 20,
+                    )
+                  ])
             ],
           ),
         ),

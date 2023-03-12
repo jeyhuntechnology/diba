@@ -38,6 +38,7 @@ class _RegisterState extends State<Register> {
                               fontWeight: FontWeight.bold, fontSize: 30),
                         ),
                         Container(
+                          height: 630,
                           padding: const EdgeInsets.all(30),
                           decoration: const BoxDecoration(
                             color: Colors.white,
