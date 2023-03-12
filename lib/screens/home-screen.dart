@@ -1,4 +1,5 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:diba/constants/images.dart';
 import 'package:diba/screens/regiter_ordering.dart';
 import 'package:diba/screens/users_list.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                   children: const [
                     CircleAvatar(
                       radius: 20,
-                      backgroundImage: AssetImage('assets/images/girl.jpg'),
+                      backgroundImage: AssetImage(Images.girl),
                     ),
                     SizedBox(
                       width: 20,
@@ -50,8 +51,7 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/images/buttons.jpg'),
-                      fit: BoxFit.cover),
+                      image: AssetImage(Images.buttons), fit: BoxFit.cover),
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),

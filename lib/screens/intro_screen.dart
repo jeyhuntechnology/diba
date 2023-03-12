@@ -1,3 +1,4 @@
+import 'package:diba/constants/images.dart';
 import 'package:diba/screens/register.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
@@ -25,7 +26,7 @@ class IntroScreen extends StatelessWidget {
                 ),
                 body: 'به اپلیکشن دیبا خوش آمدید',
                 image: const CircleAvatar(
-                  backgroundImage: AssetImage('assets/images/woman_tailor.jpg'),
+                  backgroundImage: AssetImage(Images.womanTailor),
                   radius: 130,
                 ),
               ),
@@ -40,7 +41,7 @@ class IntroScreen extends StatelessWidget {
                 body:
                     '    دیگر برای اندازه گیری لباس نیازی نیست دنبال دفتر بگردید شما میتوانید با داشتن اپلیکشن خیاطی دیبا اندازه ها را د گوشی همراه خود داشته باشید و همیشه همراه تان باشد',
                 image: const CircleAvatar(
-                  backgroundImage: AssetImage('assets/images/man_tailor.jpg'),
+                  backgroundImage: AssetImage(Images.manTailor),
                   radius: 130,
                 ),
               ),
@@ -55,7 +56,7 @@ class IntroScreen extends StatelessWidget {
                 body:
                     ' دیگر برای اندازه گیری لباس نیازی نیست دنبال دفتر بگردید شما میتوانید با داشتن اپلیکشن خیاطی دیبا اندازه ها را د گوشی همراه خود داشته باشید و همیشه همراه تان باشد   ',
                 image: const CircleAvatar(
-                  backgroundImage: AssetImage('assets/images/woman_tailor.jpg'),
+                  backgroundImage: AssetImage(Images.womanTailor),
                   radius: 130,
                 ),
               ),
