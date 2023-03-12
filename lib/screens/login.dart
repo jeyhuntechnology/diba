@@ -2,7 +2,7 @@ import 'package:diba/screens/tailor_info.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../constants/constants.dart';
-import '../widgets/back.dart';
+import '../widget/back.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);

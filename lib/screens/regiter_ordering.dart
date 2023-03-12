@@ -1,5 +1,8 @@
 import 'package:diba/constants/constants.dart';
-import 'package:diba/widgets/back.dart';
+import 'package:diba/widget/back.dart';
+import 'package:diba/widget/phone.dart';
+import 'package:diba/widget/search.dart';
+import 'package:diba/widget/user.dart';
 import 'package:flutter/material.dart';
 
 class RegisterOrder extends StatelessWidget {
@@ -28,7 +31,7 @@ class RegisterOrder extends StatelessWidget {
                 const SizedBox(
                   width: 85,
                 ),
-                const Close(),
+                // const Close(),
               ],
             ),
             const SizedBox(

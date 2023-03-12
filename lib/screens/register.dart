@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constants/constants.dart';
-import '../widgets/back.dart';
+import '../widget/back.dart';
 import 'login.dart';
 
 class Register extends StatefulWidget {
