@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:diba/constants/images.dart';
+import 'package:diba/constants/strings.dart';
 import 'package:diba/screens/regiter_ordering.dart';
 import 'package:diba/screens/users_list.dart';
 import 'package:flutter/material.dart';
@@ -89,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                                   color: IconColor,
                                   iconSize: 40,
                                 ),
-                                const Text('لیست مشتریان')
+                                const Text(Strings.customersList)
                               ],
                             )),
                         const SizedBox(
@@ -119,7 +120,7 @@ class HomeScreen extends StatelessWidget {
                                 iconSize: 40,
                               ),
                               const Text(
-                                ' ثبت سفارش',
+                                Strings.saveOrder,
                                 style: TextStyle(fontSize: 15),
                               )
                             ],
@@ -149,7 +150,7 @@ class HomeScreen extends StatelessWidget {
                                   size: 40,
                                   color: IconColor,
                                 ),
-                                const Text(' قیمت ها')
+                                const Text(Strings.prices)
                               ],
                             )),
                         const SizedBox(
@@ -171,7 +172,7 @@ class HomeScreen extends StatelessWidget {
                                   size: 40,
                                   color: IconColor,
                                 ),
-                                const Text(' ثبت هزینه ها')
+                                const Text(Strings.saveExpenses)
                               ],
                             )),
                       ],
