@@ -117,7 +117,7 @@ class _LoginState extends State<Login> {
                               ),
                               const SizedBox(height: 30),
                               Padding(
-                                padding: EdgeInsets.all(12),
+                                padding: const EdgeInsets.all(12),
                                 child: Row(
                                   children: const [
                                     // remeberMeCheckBox(),

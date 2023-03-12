@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                   children: const [
                     CircleAvatar(
                       radius: 20,
-                      backgroundImage: AssetImage('assets/images/3.jpg'),
+                      backgroundImage: AssetImage('assets/images/girl.jpg'),
                     ),
                     SizedBox(
                       width: 20,
@@ -50,7 +50,8 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('images/5.jpg'), fit: BoxFit.cover),
+                      image: AssetImage('assets/images/buttons.jpg'),
+                      fit: BoxFit.cover),
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),

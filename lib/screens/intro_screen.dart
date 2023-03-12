@@ -25,7 +25,7 @@ class IntroScreen extends StatelessWidget {
                 ),
                 body: 'به اپلیکشن دیبا خوش آمدید',
                 image: const CircleAvatar(
-                  backgroundImage: AssetImage('images/1.jpg'),
+                  backgroundImage: AssetImage('assets/images/woman_tailor.jpg'),
                   radius: 130,
                 ),
               ),
@@ -40,7 +40,7 @@ class IntroScreen extends StatelessWidget {
                 body:
                     '    دیگر برای اندازه گیری لباس نیازی نیست دنبال دفتر بگردید شما میتوانید با داشتن اپلیکشن خیاطی دیبا اندازه ها را د گوشی همراه خود داشته باشید و همیشه همراه تان باشد',
                 image: const CircleAvatar(
-                  backgroundImage: AssetImage('images/2.jpg'),
+                  backgroundImage: AssetImage('assets/images/man_tailor.jpg'),
                   radius: 130,
                 ),
               ),
@@ -55,7 +55,7 @@ class IntroScreen extends StatelessWidget {
                 body:
                     ' دیگر برای اندازه گیری لباس نیازی نیست دنبال دفتر بگردید شما میتوانید با داشتن اپلیکشن خیاطی دیبا اندازه ها را د گوشی همراه خود داشته باشید و همیشه همراه تان باشد   ',
                 image: const CircleAvatar(
-                  backgroundImage: AssetImage('images/1.jpg'),
+                  backgroundImage: AssetImage('assets/images/woman_tailor.jpg'),
                   radius: 130,
                 ),
               ),
