@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 20,
-                      backgroundImage: AssetImage('images/3.jpg'),
+                      backgroundImage: AssetImage('assets/images/3.jpg'),
                     ),
                     SizedBox(
                       width: 20,
@@ -183,24 +183,27 @@ class HomeScreen extends StatelessWidget {
                   backgroundColor: Colors.white,
                   onTap: (index) {},
                   height: 70,
-                  color:Colors.brown.shade100,
+                  color: Colors.brown.shade100,
                   items: [
                     const Icon(
                       FontAwesomeIcons.personDress,
-                      color: Color(0xFF9e777b),size: 20,
+                      color: Color(0xFF9e777b),
+                      size: 20,
                     ),
                     const Icon(
                       FontAwesomeIcons.users,
-                      color: Color(0xFF9e777b),size: 20,
+                      color: Color(0xFF9e777b),
+                      size: 20,
                     ),
                     const Icon(
                       FontAwesomeIcons.scissors,
-                      color: Color(0xFF9e777b),size: 20,
-                    )
-                    ,
+                      color: Color(0xFF9e777b),
+                      size: 20,
+                    ),
                     const Icon(
                       FontAwesomeIcons.house,
-                      color: Color(0xFF9e777b),size: 20,
+                      color: Color(0xFF9e777b),
+                      size: 20,
                     )
                   ])
             ],
