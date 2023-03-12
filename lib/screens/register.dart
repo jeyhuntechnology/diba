@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../constant.dart';
-import 'widget/back.dart';
+import '../constants/constants.dart';
+import '../widgets/back.dart';
 import 'login.dart';
-
 
 class Register extends StatefulWidget {
   const Register({Key? key}) : super(key: key);
@@ -29,7 +28,7 @@ class _RegisterState extends State<Register> {
                       children: [
                         const Text(
                           "ثبت نام",
-                          style: const TextStyle(
+                          style: TextStyle(
                               fontSize: 30, fontWeight: FontWeight.bold),
                         ),
                         const Text(
@@ -61,7 +60,7 @@ class _RegisterState extends State<Register> {
                                   ),
                                   focusedBorder: OutlineInputBorder(
                                     borderRadius: const BorderRadius.all(
-                                      const Radius.circular(30),
+                                      Radius.circular(30),
                                     ),
                                     borderSide:
                                         BorderSide(color: Colors.grey.shade300),
@@ -83,12 +82,12 @@ class _RegisterState extends State<Register> {
                                 decoration: InputDecoration(
                                   enabledBorder: const OutlineInputBorder(
                                     borderRadius: BorderRadius.all(
-                                      const Radius.circular(50),
+                                      Radius.circular(50),
                                     ),
                                   ),
                                   focusedBorder: OutlineInputBorder(
                                       borderRadius: const BorderRadius.all(
-                                        const Radius.circular(30),
+                                        Radius.circular(30),
                                       ),
                                       borderSide: BorderSide(
                                           color: Colors.grey.shade300)),
@@ -107,7 +106,7 @@ class _RegisterState extends State<Register> {
                                 keyboardType: TextInputType.text,
                                 decoration: InputDecoration(
                                   enabledBorder: const OutlineInputBorder(
-                                    borderRadius: const BorderRadius.all(
+                                    borderRadius: BorderRadius.all(
                                       Radius.circular(50),
                                     ),
                                   ),
@@ -136,7 +135,7 @@ class _RegisterState extends State<Register> {
                                   ),
                                   focusedBorder: OutlineInputBorder(
                                       borderRadius: const BorderRadius.all(
-                                        const Radius.circular(30),
+                                        Radius.circular(30),
                                       ),
                                       borderSide: BorderSide(
                                           color: Colors.grey.shade300)),
@@ -147,19 +146,30 @@ class _RegisterState extends State<Register> {
                                   hintTextDirection: TextDirection.rtl,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
-
                               ),
                               ElevatedButton(
                                 style: ElevatedButton.styleFrom(
                                     primary: kRegisterButtonColor,
                                     elevation: 3,
-                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                                    minimumSize:Size (400,40),
-                                    padding: EdgeInsets.all(15)),
-                                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>Login(),),);},
-                                child: const Text('تایید',style: TextStyle(fontWeight: FontWeight.bold),),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(20)),
+                                    minimumSize: const Size(400, 40),
+                                    padding: const EdgeInsets.all(15)),
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const Login(),
+                                    ),
+                                  );
+                                },
+                                child: const Text(
+                                  'تایید',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
                               ),
                             ],
                           ),
