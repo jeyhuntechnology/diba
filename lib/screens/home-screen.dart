@@ -1,10 +1,12 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:diba/constants/images.dart';
+import 'package:diba/constants/strings.dart';
 import 'package:diba/screens/regiter_ordering.dart';
 import 'package:diba/screens/users_list.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../constant.dart';
+import '../constants/constants.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -27,12 +29,12 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             children: [
               Padding(
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 child: Row(
-                  children: [
+                  children: const [
                     CircleAvatar(
                       radius: 20,
-                      backgroundImage: AssetImage('images/3.jpg'),
+                      backgroundImage: AssetImage(Images.girl),
                     ),
                     SizedBox(
                       width: 20,
@@ -41,25 +43,25 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Container(
                 height: 150,
                 width: 370,
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
+                padding: const EdgeInsets.all(20),
+                decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('images/5.jpg'), fit: BoxFit.cover),
+                      image: AssetImage(Images.buttons), fit: BoxFit.cover),
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Padding(
-                padding: EdgeInsets.all(5),
+                padding: const EdgeInsets.all(5),
                 child: Column(
                   children: [
                     Row(
@@ -71,7 +73,7 @@ class HomeScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.brown[100],
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -81,16 +83,17 @@ class HomeScreen extends StatelessWidget {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => UsersList()));
+                                            builder: (context) =>
+                                                const UsersList()));
                                   },
-                                  icon: Icon(FontAwesomeIcons.users),
+                                  icon: const Icon(FontAwesomeIcons.users),
                                   color: IconColor,
                                   iconSize: 40,
                                 ),
-                                Text('لیست مشتریان')
+                                const Text(Strings.customersList)
                               ],
                             )),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Container(
@@ -98,7 +101,8 @@ class HomeScreen extends StatelessWidget {
                           width: 170,
                           decoration: BoxDecoration(
                             color: Colors.brown[100],
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(20)),
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -109,14 +113,14 @@ class HomeScreen extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              RegisterOrder()));
+                                              const RegisterOrder()));
                                 },
-                                icon: Icon(FontAwesomeIcons.plus),
+                                icon: const Icon(FontAwesomeIcons.plus),
                                 color: IconColor,
                                 iconSize: 40,
                               ),
-                              Text(
-                                ' ثبت سفارش',
+                              const Text(
+                                Strings.saveOrder,
                                 style: TextStyle(fontSize: 15),
                               )
                             ],
@@ -124,7 +128,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
@@ -136,7 +140,7 @@ class HomeScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.brown[100],
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -146,10 +150,10 @@ class HomeScreen extends StatelessWidget {
                                   size: 40,
                                   color: IconColor,
                                 ),
-                                Text(' قیمت ها')
+                                const Text(Strings.prices)
                               ],
                             )),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Container(
@@ -158,7 +162,7 @@ class HomeScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.brown[100],
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(20)),
+                                  const BorderRadius.all(Radius.circular(20)),
                             ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -168,7 +172,7 @@ class HomeScreen extends StatelessWidget {
                                   size: 40,
                                   color: IconColor,
                                 ),
-                                Text(' ثبت هزینه ها')
+                                const Text(Strings.saveExpenses)
                               ],
                             )),
                       ],
@@ -176,31 +180,34 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               CurvedNavigationBar(
                   backgroundColor: Colors.white,
                   onTap: (index) {},
                   height: 70,
-                  color:Colors.brown.shade100,
-                  items: [
-                    const Icon(
+                  color: Colors.brown.shade100,
+                  items: const [
+                    Icon(
                       FontAwesomeIcons.personDress,
-                      color: Color(0xFF9e777b),size: 20,
+                      color: Color(0xFF9e777b),
+                      size: 20,
                     ),
-                    const Icon(
+                    Icon(
                       FontAwesomeIcons.users,
-                      color: Color(0xFF9e777b),size: 20,
+                      color: Color(0xFF9e777b),
+                      size: 20,
                     ),
-                    const Icon(
+                    Icon(
                       FontAwesomeIcons.scissors,
-                      color: Color(0xFF9e777b),size: 20,
-                    )
-                    ,
-                    const Icon(
+                      color: Color(0xFF9e777b),
+                      size: 20,
+                    ),
+                    Icon(
                       FontAwesomeIcons.house,
-                      color: Color(0xFF9e777b),size: 20,
+                      color: Color(0xFF9e777b),
+                      size: 20,
                     )
                   ])
             ],

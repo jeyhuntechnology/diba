@@ -8,7 +8,7 @@ class UsersList extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Row(
-          children: [Text('welcome')],
+          children: const [Text('welcome')],
         ),
       ),
     );

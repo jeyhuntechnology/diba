@@ -1,7 +1,9 @@
-import 'package:diba/constant.dart';
-import 'package:diba/screens/widget/back.dart';
+import 'package:diba/constants/constants.dart';
+import 'package:diba/widget/back.dart';
+import 'package:diba/widget/phone.dart';
+import 'package:diba/widget/search.dart';
+import 'package:diba/widget/user.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RegisterOrder extends StatelessWidget {
   const RegisterOrder({Key? key}) : super(key: key);
@@ -15,48 +17,49 @@ class RegisterOrder extends StatelessWidget {
           children: [
             Row(
               children: [
-                Padding(
+                const Padding(
                   padding: EdgeInsets.all(10),
                   child: Back(),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 85,
                 ),
                 Text(
                   'ثبت سفارشات',
                   style: TitlesFont,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 85,
                 ),
-                Close(),
+                // const Close(),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Search(),
-            SizedBox(
+            const Search(),
+            const SizedBox(
               height: 30,
             ),
-            User(),
-            SizedBox(
+            const User(),
+            const SizedBox(
               height: 20,
             ),
-            Phone(),
-            
-            DropdownButton<String>(items: [
-              DropdownMenuItem(
-                child: Text('خانم'),
-                value: 'خانم',
-              ),
-              DropdownMenuItem(
-                child: Text('آقا'),
-                value: 'آقا',
-              ),
-
-
-            ], onChanged: (value) {print(value);}),
+            const Phone(),
+            DropdownButton<String>(
+                items: const [
+                  DropdownMenuItem(
+                    child: Text('خانم'),
+                    value: 'خانم',
+                  ),
+                  DropdownMenuItem(
+                    child: Text('آقا'),
+                    value: 'آقا',
+                  ),
+                ],
+                onChanged: (value) {
+                  print(value);
+                }),
           ],
         )),
       ),
