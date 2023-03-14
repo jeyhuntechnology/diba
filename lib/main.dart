@@ -1,9 +1,11 @@
+import 'package:diba/constants/theme.dart';
 import 'package:diba/screens/intro_screen.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -11,8 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
       routes: {
-        "/": (context)=> IntroScreen(),
+        "/": (context) => IntroScreen(),
       },
     );
   }

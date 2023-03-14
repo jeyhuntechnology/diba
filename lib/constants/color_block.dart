@@ -1,10 +1,13 @@
 import 'package:flutter/animation.dart';
+import 'package:flutter/material.dart';
 
 class ColorBlock {
   ColorBlock._();
 
   static const Color primary = Color(0xffffffff);
   static const Color accent = Color(0xff000000);
+
+  static const Color red = Colors.red;
 
   static const Color google = Color(0xffDD4B39);
   static const Color pinterest = Color(0xFFc8232c);
