@@ -27,7 +27,7 @@ class resentScreen_1 extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 20
                     ),),
-
+// paddinggit
                   Padding(
                     padding: const EdgeInsets.only(top: 150.0),
                     child: Material(
